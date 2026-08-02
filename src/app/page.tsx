@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { posts } from "@/data/posts";
+import { posts } from "../data/posts";
 
 interface LinkItem {
   id: string;
@@ -34,7 +34,7 @@ const mainLinks: LinkItem[] = [
   {
     id: "email",
     label: "Get in Touch",
-    subtext: "ayuboketch84@gmail.com",
+    subtext: "Email me directly",
     url: "mailto:ayuboketch84@gmail.com",
     icon: "email",
   },

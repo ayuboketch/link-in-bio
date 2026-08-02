@@ -1,6 +1,8 @@
-import { posts } from "@/data/posts";
+// "use client";
+
 import Link from "next/link";
 import type { Metadata } from "next";
+import { posts } from "../../data/posts";
 
 export const metadata: Metadata = {
   title: "Blog — Ayub Oketch",

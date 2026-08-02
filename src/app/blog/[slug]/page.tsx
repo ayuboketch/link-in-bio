@@ -1,4 +1,4 @@
-import { posts } from "@/data/posts";
+import { posts } from "../../../data/posts";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
