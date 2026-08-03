@@ -1,15 +1,15 @@
-// "use client";
-
 import Link from "next/link";
 import type { Metadata } from "next";
-import { posts } from "../../data/posts";
+import { getPosts } from "../../lib/posts";
 
 export const metadata: Metadata = {
   title: "Blog — Ayub Oketch",
   description: "Notes on frontend engineering, Next.js, and building in public.",
 };
 
-export default function BlogIndexPage() {
+export default async function BlogIndexPage() {
+  const posts = await getPosts();
+
   return (
     <main className="min-h-screen bg-slate-950 text-slate-100 py-12 px-4 sm:px-6 relative overflow-hidden">
       {/* Radial background blur */}
